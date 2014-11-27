@@ -1,32 +1,49 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.24)  27 NOV 2014 21:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.11.24)  28 NOV 2014 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**IT_resume2.tex
-(./IT_resume2.tex
+**it_resume.tex
+(./it_resume.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
 
-! LaTeX Error: File `scrartcl.cls' not found.
+! LaTeX Error: File `classicthesis.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: cls)
+or enter new name. (Default extension: sty)
 
 Enter file name: 
 ! Emergency stop.
 <read *> 
          
-l.22 ^^M
-        
+l.28 \usepackage
+                [LabelsAligned]{currvita} % Use the currvita style for the l...
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
- 10 strings out of 495031
- 206 string characters out of 6181530
- 45720 words of memory out of 5000000
- 3315 multiletter control sequences out of 15000+600000
+ 201 strings out of 495031
+ 2184 string characters out of 6181530
+ 47012 words of memory out of 5000000
+ 3498 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 10i,0n,7p,106b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,0n,17p,140b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
