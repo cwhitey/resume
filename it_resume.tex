@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Jan 2011--Dec 2012} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Callum J. White}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+\NewEntry{}{\textit{Born in Australia,}}{11 June 1991} % Birthplace and date
+
+\NewEntry{email}{\href{mailto:callumw1991@gmail.com}{callumw1991@gmail.com}} % Email address
+
+\NewEntry{phone}{(M) (+61)410110691} % Phone number(s)
+
+\vspace{1em} % Extra white space
+
+\noindent\spacedlowsmallcaps{LinkedIn}\vspace{0.5em}
+
+\Description{\href{https://www.linkedin.com/pub/callum-white/48/272/b94}{https://www.linkedin.com/pub/callum-white/48/272/b94}}
+
+\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+\Description{A position in the field of computers with special interests in business applications programming, 
+			information processing, and management systems.}\vspace{2em} % Goal text
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+\NewEntry{July 2014--Dec 2014}{Software Developer (Intern), Melbourne}
+
+\Description{\MarginText{Australia Post - Digital Mailbox}
+\begin{itemize} \itemsep -2pt % reduce space between items
+				\item Worked in teams using S.A.F.E. as an Agile framework.
+				\item Worked with a large monolithic Java application.
+				\item Worked with microservices being used as a strategy to reduce coupling and gradually replace the monolithic application.
+				\item Used Clojure to write tests and do backend development.
+\end{itemize}}
+
+%------------------------------------------------
+
+\NewEntry{Jan 2011--Dec 2012}{Software Developer, Townsville}
+
+\Description{\MarginText{Code Valley}
+\begin{itemize} \itemsep -2pt % reduce space between items
+				\item Worked on a research based project geared towards getting a product on the market.
+				\item x86 Assembly in Linux using the NASM assembly compiler.
+				\item Worked in a small group aiming to hit defined goals.
+				\item Worked with a wide variety of open source software running on Linux.
+				\item Trained new employees in the basics of Code Valley’s technology.
+				\item Moderated a small group of developers.
+\end{itemize}}
+
+%------------------------------------------------
+
+\NewEntry{July 2010--Feb 2011}{Drinks Waiter, Townsville}
+
+\Description{\MarginText{Cactus Jacks}
+\begin{itemize} \itemsep -2pt %reduce space between items
+				\item Enthusiastically greet customers and lead them to a suitable table.
+				\item Have a high degree of knowledge relating to Cactus Jack’s custom cocktails, and alcoholic beverage lingo.
+				\item Maintain a calm and professional attitude in a busy and stressful environment.
+\end{itemize}}
+
+%------------------------------------------------
+
+\NewEntry{Dec 2008--Apr 2010}{IT Salesperson, Townsville}
+
+\Description{\MarginText{Officeworks}
+\begin{itemize} \itemsep -2pt %reduce space between items
+				\item Evaluate the best IT product choice for customers in different situations.
+				\item Attach locks and tags to high-risk items to ensure maximum security.
+				\item Re-stock IT products and ensure display units are clean and in fully working condition.
+\end{itemize}}
+
+%------------------------------------------------
+
+\vspace{6em} % Extra space between major sections - added even more here to get it on the next page
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{mid 2012--present}{Monash University, Clayton}
+
+\Description{\MarginText{Bachelor of Software Engineering} 
+\begin{itemize}  \itemsep -2pt % reduce space between items
+				 \item Expected mid 2016.
+				 \item Maintained a 3.5+ GPA throughout my study thus far.
+\end{itemize}}
+
+%------------------------------------------------
+
+\NewEntry{early 2010}{James Cook University, Townsville}
+
+\Description{\MarginText{Bachelor of Information Technology}
+\begin{itemize}  \itemsep -2pt % reduce space between items
+				 \item Single semester.
+				 \item Received an HD in \textit{CP1200 - Introduction to Programming} (\textsc{python}).
+\end{itemize}}
+
+%------------------------------------------------
+
+\NewEntry{2005--2009}{William Ross High School, Townsville}
+
+\Description{\MarginText{High School}
+\begin{itemize}  \itemsep -2pt % reduce space between items
+				 \item Achieved an HA average in the top 4 Year 12 subjects including Maths and Information Technology Systems.
+\end{itemize}}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Computer Skills}\vspace{1em}
+
+\Description{\MarginText{Languages}\textsc{java}, \textsc{clojure}, \textsc{perl}, \textsc{c}, \textsc{bash}}
+
+\Description{\MarginText{Tools}Git, Jenkins, Rally}
+
+\Description{\MarginText{Operating Systems}Linux, Mac OS X, Microsoft Windows}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+\Description{\MarginText{Certificates}2014\ \ $\cdotp$\ \ Responsible Service of Alcohol certificate, \textsc{Victoria}}
+
+%------------------------------------------------
+
+\Description{\MarginText{Interests}Powerlifting\ \ $\cdotp$\ \ Exercise Physiology\ \ $\cdotp$\ \ Fitness\ \ $\cdotp$\ \ Overseas Travel}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
